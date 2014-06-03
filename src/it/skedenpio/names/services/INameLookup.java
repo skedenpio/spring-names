@@ -6,8 +6,8 @@ import it.skedenpio.names.domain.Name;
 
 public interface INameLookup {
 	
-	public Name getNameById(int id);
-	
 	public List<Name> getNames();
+	
+	public Name getNameById(int id);
 
 }

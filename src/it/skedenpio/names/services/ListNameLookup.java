@@ -6,21 +6,21 @@ import java.util.List;
 
 public class ListNameLookup implements INameLookup {
 
-	private List<Name> nameList;
+	private List<Name> names;
 	
-	public void setNameList(List<Name> nameList) {
-		this.nameList = nameList;
-	}
-	
-	@Override
-	public Name getNameById(int id) {
-		Name name = nameList.get(id);
-		return name;
+	public void setNames(List<Name> names) {
+		this.names = names;
 	}
 
 	@Override
 	public List<Name> getNames() {
-		return nameList;
+		return names;
+	}
+	
+	@Override
+	public Name getNameById(int id) {
+		Name name = names.get(id);
+		return name;
 	}
 
 }

@@ -5,14 +5,14 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
-<title>Roberto Homo</title>
+<title>Name list</title>
 </head>
 <body>
+<h1>Name list</h1>
+
 <ul>
 <c:forEach items="${names}" var="name">
-
-<li>${name.firstName} ${name.lastName}</li>
-
+	<li>${name.firstName} ${name.lastName}</li>
 </c:forEach>
 </ul>
 </body>

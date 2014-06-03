@@ -4,28 +4,22 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 <bean name="names" class="it.skedenpio.names.services.ListNameLookup">
-
-	<property name="nameList">
+	<property name="names">
 		<list>
-		
 			<bean class="it.skedenpio.names.domain.Name">
 				<constructor-arg value="Roberto"></constructor-arg>
 				<constructor-arg value="Gran Stiglione"></constructor-arg>
 			</bean>
-
 			<bean class="it.skedenpio.names.domain.Name">
 				<constructor-arg value="Luca"></constructor-arg>
 				<constructor-arg value="Nitti"></constructor-arg>
 			</bean>
-
 			<bean class="it.skedenpio.names.domain.Name">
 				<constructor-arg value="Gay"></constructor-arg>
 				<constructor-arg value="Minischetti"></constructor-arg>
 			</bean>
-
 		</list>
 	</property>
-	
 </bean>
 
 </beans>
